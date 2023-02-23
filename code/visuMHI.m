@@ -32,7 +32,7 @@ function Res = visuMHI(rep,seuil)
 	end
 	%imshow(MHI);
     M = max(max(MHI));
-	Res =uint(255 * MHI / M ) ;
+	Res = uint8(255 * (MHI / M)) ;
 	
 
 	
